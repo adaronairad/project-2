@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fundraising Campaign</title>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <a href="home.html" target="_blank">Home</a>
+            <a href="donate.html" target="_blank">Donate</a>
+            <a href="campaigns.html" target="_blank">Raise</a>
+        </div>
+        <div class="logo">
+            <img src="Photos-dl/image-removebg-preview (2).png" alt="Logo">
+        </div>  
+        <div class="right">
+            <a href="about.html" target="_blank">About</a>
+            <a href="signin.html" target="_blank">Sign In</a>
+            <a href="start.html" target="_blank">Start Now!</a>
+        </div>
+    </nav>
+    
+    <div class="section" id="home">
+        <div class="home-text">
+            <h1>Welcome to Our Fundraising Platform</h1>
+            <p>Join us in making a difference by supporting various fundraising campaigns that bring positive change to communities around the world.</p>
+        </div>
+        <div class="home-image">
+        </div>
+    </div>
+
+    <div class="steps-section">
+        <div class="infographic-container">
+            <div class="infographic-line"></div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Create Account</h3>
+                    <p>Quick setup with email verification and profile creation</p>
+                    <div class="progress-indicator">
+                        <div class="progress-bar" style="width: 20%"></div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Set Your Goal</h3>
+                    <p>Define your fundraising target and timeline</p>
+                    <div class="progress-indicator">
+                        <div class="progress-bar" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Add Content</h3>
+                    <p>Upload photos, videos, and tell your story</p>
+                    <div class="progress-indicator">
+                        <div class="progress-bar" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Share Campaign</h3>
+                    <p>Spread the word on social media and email</p>
+                    <div class="progress-indicator">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">5</div>
+                    <h3>Collect Funds</h3>
+                    <p>Receive donations securely in your account</p>
+                    <div class="progress-indicator">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fundraiser-section">
+            <div class="section-header">
+                <h2>Discover fundraisers inspired by what you care about</h2>
+                <div class="location-filter">
+                    <span>Happening worldwide</span>
+                    <span>▼</span>
+                </div>
+            </div>
+    
+            <div class="fundraiser-container">
+                <div class="fundraiser-grid">
+                    <div class="fundraiser-card">
+                        <div class="card-image-container">
+                            <img src="Photos-dl/john-cameron-FMrZLPdDyx4-unsplash.jpg" alt="Fundraiser" class="card-image">
+                            <div class="donation-badge">2.3K donations</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Project: #CleanAndGreen</h3>
+                            <div class="progress-container">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <div class="amount-raised">₱89,460 raised</div>
+                        </div>
+                    </div>
+    
+                    <div class="fundraiser-card">
+                        <div class="card-image-container">
+                            <img src="Photos-dl/section 1.jpg" alt="Fundraiser" class="card-image">
+                            <div class="donation-badge">958 donations</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Community Building for a Cause</h3>
+                            <div class="progress-container">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <div class="amount-raised">₱45,917 raised</div>
+                        </div>
+                    </div>
+    
+                    <div class="fundraiser-card">
+                        <div class="card-image-container">
+                            <img src="Photos-dl/tribesh-kayastha-zgdhwK1UT3U-unsplash.jpg" alt="Fundraiser" class="card-image">
+                            <div class="donation-badge">6.7K donations</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Awareness and Seminars</h3>
+                            <div class="progress-container">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                            <div class="amount-raised">₱21,024 raised</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function animateProgressBars() {
+                const progressBars = document.querySelectorAll('.progress-bar');
+                progressBars.forEach(bar => {
+                    const targetWidth = bar.style.width;
+                    bar.style.width = '0';
+                    setTimeout(() => {
+                        bar.style.width = targetWidth;
+                    }, 500);
+                });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateProgressBars();
+                    }
+                });
+            });
+
+            observer.observe(document.querySelector('.steps-section'));
+        </script>
+    </div>
+
+    <div class="section" id="campaigns">
+        <h2>Featured Campaigns</h2>
+        <p>Support the most impactful causes.</p>
+    </div>
+
+    <div class="success-stories">
+        <div class="stories-header">
+            <h2>Success Stories</h2>
+            <p>Real impact, real stories from our community</p>
+        </div>
+        
+        <div class="stories-grid">
+            <div class="stories-row">
+                <div class="story-card">
+                    <img src="Photos-dl/community-kids.jpg" alt="Community Project">
+                    <div class="story-content">
+                        <p class="story-quote">"Thanks to the incredible support from this platform, we were able to build a new community center that now serves over 200 children daily. The impact has been truly transformative!"</p>
+                        <p class="story-author">- Sarah Johnson</p>
+                        <p class="story-campaign">Community Center Project</p>
+                        <p class="story-amount">$125,000 raised</p>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <img src="Photos-dl/medical-support.jpg" alt="Medical Support">
+                    <div class="story-content">
+                        <p class="story-quote">"When my daughter needed urgent medical treatment, this community stepped up in ways I never imagined. We're forever grateful for the support that saved her life."</p>
+                        <p class="story-author">- Michael Chen</p>
+                        <p class="story-campaign">Life-Saving Surgery Fund</p>
+                        <p class="story-amount">$85,000 raised</p>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <img src="Photos-dl/library.jpg" alt="Education Initiative">
+                    <div class="story-content">
+                        <p class="story-quote">"Our school library renovation project exceeded all expectations. Now our students have access to modern resources and a inspiring space to learn."</p>
+                        <p class="story-author">- Emma Rodriguez</p>
+                        <p class="story-campaign">Modern Library Initiative</p>
+                        <p class="story-amount">$45,000 raised</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stories-row centered">
+                <div class="story-card">
+                    <img src="Photos-dl/animal-rescue.jpg" alt="Animal Rescue">
+                    <div class="story-content">
+                        <p class="story-quote">"With the funds raised, we were able to rescue and rehabilitate over 50 endangered animals. Each donation made a direct impact on saving precious lives."</p>
+                        <p class="story-author">- David Thompson</p>
+                        <p class="story-campaign">Wildlife Rescue Center</p>
+                        <p class="story-amount">$92,000 raised</p>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <img src="Photos-dl/disaster-relief.jpg" alt="Disaster Relief">
+                    <div class="story-content">
+                        <p class="story-quote">"After the natural disaster hit our town, the support we received helped rebuild homes for 15 families. It's amazing what we can achieve together."</p>
+                        <p class="story-author">- Maria Santos</p>
+                        <p class="story-campaign">Community Rebuild Project</p>
+                        <p class="story-amount">$150,000 raised</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch for more information.</p>
+    </div>
+</body>
+</html>
